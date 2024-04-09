@@ -21,7 +21,7 @@ ENV SERVERURL ""
 WORKDIR /app
 COPY --from=builder /usr/src/app/ .
 
-EXPOSE 65501
+EXPOSE 8080
 CMD ["inspire.py"]
 
 ARG BUILD_DATE
